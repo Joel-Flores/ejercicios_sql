@@ -22,7 +22,7 @@ def create_table():
     print('base de datos inicializada') 
 
 def view(row): 
-    print('employee_id') 
+    print('employee_id, bonus') 
     for table in row: 
         print(table) 
 
