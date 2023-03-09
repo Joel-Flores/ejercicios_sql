@@ -28,7 +28,18 @@ example = [
     '''    resolucion() ''',
     ]
 e_1 = [
-
+    '''CREATE TABLE Employees (
+    employee_id INTEGER PRIMARY KEY,
+    name TEXT,
+    salary INTEGER
+    )''',
+    '''INSERT INTO Employees (employee_id, name, salary)
+    VALUES
+    (2, 'Meir', 3000),
+    (3, 'Michael', 3800),
+    (7, 'Addilyn', 7400),
+    (8, 'Juan', 6100),
+    (9, 'Kannon', 7700)'''
 ]
 e_2 = [
 
