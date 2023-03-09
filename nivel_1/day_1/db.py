@@ -1,4 +1,5 @@
 import sqlite3
+from schema import example
 def get_db():
     try:
         db = sqlite3.connect('database/database.sqlite3')#, row_factory=sqlite3.Row)
@@ -9,7 +10,9 @@ def get_db():
         
 def crear_archivo(nombre_archivo, numero):
     with open(nombre_archivo, 'w') as archivo:
-        archivo.write(f"'''Ejercicio {numero}.'''")
+        archivo.write(f"'''Ejercicio {numero}.'''\n")
+        for instruction in example:
+            archivo.write(instruction + '\n')
     archivo.close()
 
 def run(cantidad):
