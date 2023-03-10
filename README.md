@@ -1,0 +1,1 @@
+ejercicios propuestos de algunas paginas web para sql

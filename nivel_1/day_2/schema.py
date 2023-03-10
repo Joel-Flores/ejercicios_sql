@@ -57,5 +57,12 @@ e_2 = [
 
 ]
 e_3 = [
-
+    '''CREATE TABLE Person (
+    id INTEGER PRIMARY KEY,
+    email TEXT NOT NULL
+    )''',
+    '''INSERT INTO Person (id, email) VALUES 
+    (1, 'john@example.com'),
+    (2, 'bob@example.com'),
+    (3, 'john@example.com')'''
 ]

@@ -32,6 +32,7 @@ def consult_table():
     c.execute('''SELECT *
             FROM Salary''')
     view(c.fetchall())
+    
 def resolucion(): 
     db, c = get_db()
     
